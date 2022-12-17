@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Coinview</title>
+    </head>
+    <body>
+        Hello
+        <div id = "trades"></div>
+
+        <h1>Coinview</h1>
+        <script>
+            var binanceSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade");  
+            var tradeDiv = document.getElementById("trades");
+
+            binanceSocket.onmessage = function(event){
+                console.log(event.data);
+                var messageObject = JSON.parse(event.data);
+                tradeDiv.append(messageObject.p + " ");
+            }
+        </script>
+        <p>Here is a list of all the coins in the database:</p>
+        <ul>
+            <li><a href="coin.htm">Coin 1</a></li>
+            <li><a href="coin.htm">Coin 2</a></li>
+            <li><a href="coin.htm">Coin 3</a></li>
+        </ul>
+        
+</html>
