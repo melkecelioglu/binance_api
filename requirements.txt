@@ -1,3 +1,5 @@
 python-binance
 TA-Lin
 numpy
+backtrader
+flask
