@@ -3,3 +3,6 @@ TA-Lin
 numpy
 backtrader
 flask
+
+useful links:
+jinja.palletsprojects.com/en/2.11.x/templates/
