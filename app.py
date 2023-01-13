@@ -27,6 +27,7 @@ def buy():
             symbol=request.form['symbol'],
             side=SIDE_BUY,
             type=ORDER_TYPE_MARKET,
+            # type=ORDER_TYPE_SALE,
             timeInFroce=TIME_IN_FORCE_GTC,
             quantity=request.form['quantity'])
     except Exception as e:
