@@ -6,3 +6,5 @@ flask
 
 useful links:
 jinja.palletsprojects.com/en/2.11.x/templates/
+
+https://python-binance.readthedocs.io/en/latest/account.html#id3
